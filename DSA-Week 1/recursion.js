@@ -1,4 +1,5 @@
-//print numbers from 1 to n;
+//print numbers from 1 to n
+
 function printNNumbers(n,current=1){
     if(current>n){
         return;
@@ -6,4 +7,13 @@ function printNNumbers(n,current=1){
     console.log(current);
     printNNumbers(n,current+1);
 }
-printNNumbers(6)
+
+//print numbers from n to 1
+
+function printReverse(n){
+    if(n<1){
+        return;
+    }
+    console.log(n);
+    printReverse(n-1);
+}
