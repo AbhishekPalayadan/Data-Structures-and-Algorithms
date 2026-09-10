@@ -53,3 +53,35 @@ function reverseString(str){
     }
     return reverseString(str.slice(1))+str[0];
 }
+
+//check palindrome string
+
+function palindrome(str,left=0,right=str.length-1){
+    if(left>=right){
+        return true;
+    }
+
+    if(str[left]!=str[right]){
+        return false;
+    }
+    return palindrome(str,left+1,right-1);
+}
+
+//sum of array elements
+
+function arraySum(arr,index=0){
+    if(index===arr.length){
+        return 0;
+    }
+    return arr[index]+arraySum(arr,index+1);
+}
+
+//Find maximum element
+
+function max(arr,index=0){
+    if(index===arr.length-1){
+        return arr[index];
+    }
+    return Math.max(arr[index],max(arr,index+1));
+}
+console.log(max([1,2,3,4,5]))

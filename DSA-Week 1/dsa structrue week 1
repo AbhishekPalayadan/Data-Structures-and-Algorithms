@@ -1,0 +1,53 @@
+DSA
+│
+├── Complexity Analysis
+│   ├── Time Complexity
+│   ├── Space Complexity
+│   └── Big O Notation
+│
+├── Searching
+│   ├── Linear Search
+│   ├── Binary Search
+│   └── Recursive Binary Search
+│
+├── Recursion
+│   ├── Base Case
+│   ├── Recursive Case
+│   ├── Factorial
+│   ├── Fibonacci
+│   ├── String Reverse
+│   └── Array Sum/Product
+│
+├── Linked List
+│   │
+│   ├── Singly Linked List
+│   │   ├── Node
+│   │   ├── Head
+│   │   ├── Tail
+│   │   ├── Append
+│   │   ├── Prepend
+│   │   ├── Insert
+│   │   ├── Delete
+│   │   ├── Search
+│   │   ├── Reverse
+│   │   └── Remove Duplicates
+│   │
+│   ├── Doubly Linked List
+│   │   ├── prev
+│   │   ├── next
+│   │   ├── Forward Traversal
+│   │   ├── Reverse Traversal
+│   │   └── Deletion
+│   │
+│   └── Circular Linked List
+│       ├── Tail.next = Head
+│       ├── Circular Traversal
+│       ├── Insert
+│       ├── Delete
+│       └── Reverse
+│
+└── Mathematical Problems
+    ├── Fibonacci
+    ├── Factorial
+    ├── Prime Number
+    └── Power Of Two
