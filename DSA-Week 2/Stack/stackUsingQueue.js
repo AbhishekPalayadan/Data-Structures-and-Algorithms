@@ -1,28 +1,53 @@
 class Queue{
     constructor(){
-        this.items=[];
+        this.items=[]
     }
 
-    push(element){
+    enqueue(element){
         this.items.push(element)
     }
 
-    pop(){
-        return this.items.pop();
+    dequeue(){
+        return this.items.shift()
     }
 
-    display(){
-        console.log(this.items)
+    isEmpty(){
+        return this.items.length===0;
+    }
+
+    size(){
+        return this.items.length;
     }
 }
 
+class Stack{
+    constructor(){
+        this.queue=new Queue();
+    }
 
-const queue=new Queue();
+    push(element){
+        this.queue.enqueue(element);
+        for(let i=0;i<this.queue.size-1;i++){
+            this.queue.enqueue(this.queue.dequeue())
+        }
+    }
 
-queue.push(5)
-queue.push(6)
-queue.push(7);
-queue.push(8);
-queue.pop();
+    pop(){
+        return this.queue.dequeue();
+    }
 
-queue.display()
+    display(){
+        console.log(this.queue.items)
+    }
+}
+
+const stack=new Stack();
+
+stack.push(1);
+stack.push(2);
+stack.push(3);
+stack.push(4);
+
+stack.pop();
+
+stack.display()
