@@ -2,7 +2,6 @@ function insertionSort(arr){
     for(let i=1;i<arr.length;i++){
         let current=arr[i];
         let j=i-1;
-
         while(j>=0 && arr[j]>current){
             arr[j+1]=arr[j];
             j--;
@@ -11,5 +10,4 @@ function insertionSort(arr){
     }
     return arr;
 }
-const arr=[6,0,9,4,7,2,8,3,5,1]
-console.log(insertionSort(arr))
+console.log(insertionSort([4,2,5,7,1]))
