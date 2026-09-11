@@ -1,10 +1,10 @@
 class Stack{
     constructor(){
-        this.items=[];
+        this.items=[]
     }
 
     push(element){
-        this.items.push(element)
+        this.items.push(element);
     }
 
     pop(){
@@ -24,21 +24,23 @@ class Stack{
     }
 
     clear(){
-        return this.items=[]
+        this.items=[];
     }
 
     display(){
-        console.log(this.items);
+        console.log(this.items)
     }
 }
 
 const stack=new Stack();
 
-stack.push(5)
-stack.push(6)
-stack.push(7)
-console.log(stack.isEmpty())
-console.log(stack.size())
-stack.clear()
-
-stack.display()
+stack.push(5);
+stack.push(6);
+stack.push(7);
+stack.push(8);
+stack.push(9);
+stack.pop();
+console.log(stack.peek());
+console.log(stack.size());
+console.log(stack.isEmpty());
+stack.display();
