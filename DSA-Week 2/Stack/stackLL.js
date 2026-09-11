@@ -11,8 +11,8 @@ class Stack{
         this.size=0;
     }
 
-    push(element){
-        const node=new Node(element);
+    push(value){
+        const node=new Node(value);
 
         node.next=this.head;
         this.head=node;
@@ -20,6 +20,9 @@ class Stack{
     }
 
     pop(){
+        if(this.head=== null){
+            return "Stack is empty";
+        }
         const removed=this.head.value;
         this.head=this.head.next;
         this.size--;
@@ -42,16 +45,13 @@ class Stack{
             current=current.next;
         }
     }
-
 }
-
 
 const stack=new Stack();
 
+stack.push(1)
+stack.push(2)
+stack.push(3)
 stack.push(4)
-stack.push(5)
-stack.push(7)
-stack.push(8)
 stack.pop()
-
 stack.display()
